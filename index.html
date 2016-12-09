@@ -9,8 +9,9 @@
 
 <body>
     <div class="container">
-        <div class="board" ng-controller="boardController">
-            
+        <div class="board" color-directive ng-controller="boardController">
+            <div class="square" ng-repeat="square in squares track by $index" ng-click="select($index)">
+            </div>
         </div>
     </div>
 
